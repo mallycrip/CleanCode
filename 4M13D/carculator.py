@@ -22,11 +22,11 @@ class carculator:
             result = self.first / self.second
             return result
 
+
+a = input()
 input1 = input()
 input2 = input()
-
 a = carculator(int(input1), int(input2))
-
 input_car = input()
 
 
