@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, Response
 
 app = Flask(__name__)
 
@@ -8,13 +8,16 @@ user = []
 def register():
     id = request.json["id"]
     pw = request.json["pw"]
+
     user.append({
         'id':id,
         'pw':pw
     })
+
+    response = Response("Register Success | id : "+id)
     print("Register Success", id)
     print(user)
-    return "Register Success" , id
+    return response
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -29,7 +32,7 @@ def login():
                 return "LOGIN SUCCESS"
             else:
                 return "Check your pw."
-    return "Wrong"
+    return "Check your ID"
 
 if __name__ == '__main__':
     app.run(debug=True)
