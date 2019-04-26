@@ -12,7 +12,7 @@ def register():
     register_error = Response("Already registered ID",409)
     register_success = Response("Register Success : " + user_id, 200)
 
-    if type(user_id) == str\
+    if type(user_id) == str \
             and type(user_pw) == str:
         for register in user:
             if register['id'] == user_id:
