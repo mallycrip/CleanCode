@@ -22,7 +22,7 @@ def register():
                 'id': user_id,
                 'pw': user_pw
             })
-            print("register success", user_id)
+            print("Register : ", user_id)
             return register_success
     else:
         return register_type_error
