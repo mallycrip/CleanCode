@@ -1,14 +1,13 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+import sqlite3
 
-engine = create_engine('sqlite:////tmp/test.db', convert_unicode = True )
-db_session = scoped_session(sessionmaker(autocommit=False,
-                                         autoflush=False,
-                                         bind=engine))
+conn = sqlite3.connect("test.db")
 
-Base = declarative_base()
-Base.query = db_session.query_property()
+cur = conn.cursor()
 
-def init_db():
-    import your
+cur.execute("select * from customer")
+
+rows = cur.fetchall()
+for row in rows:
+    print(row)
+
+conn.close()
