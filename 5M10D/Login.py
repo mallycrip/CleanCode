@@ -4,7 +4,19 @@ app = Flask(__name__)
 
 user = []
 
-@app.route('/', methods=['GET'])
+@app.route('/')
+def index():
+    connect_id = request.cookies.get('connect_id')
+    connect_failed = Response('Do login')
+
+    if connect_id == None:
+        return connect_failed
+    else:
+        connect_success = Response('ID : ' + connect_id)
+        return connect_success
+
+
+@app.route('/register', methods=['GET'])
 def register():
     user_id = request.json["id"]
     user_pw = request.json["pw"]
@@ -39,7 +51,7 @@ def login():
         if login['id'] == login_id \
                 and login['pw'] == login_pw:
             print("Login Success")
-            #login_success.set_cookie('id',login_id)
+            login_success.set_cookie('connect_id',login_id)
             return login_success
     return login_failed
 
