@@ -29,5 +29,5 @@ __개발 속도를 빠르게, 기한을 맞추는 유일한 방법은 언제나 
 - 테스트 케이스가 존재하고 모든 테스트를 통과한 코드
 - 중복이 없고 클래스, 메서드, 함수 등을 최대한 줄인 코드
 
-## 의미 있는 이름
-[의미 있는 이름 ](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%9D%98%EB%AF%B8%20%EC%9E%88%EB%8A%94%20%EC%9D%B4%EB%A6%84)
+## 의미 있게 이름 정하기
+[의미 있게 이름 정하기](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%9D%98%EB%AF%B8%20%EC%9E%88%EA%B2%8C%20%EC%9D%B4%EB%A6%84%20%EC%A0%95%ED%95%98%EA%B8%B0)
