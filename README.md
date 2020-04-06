@@ -36,3 +36,4 @@ __다음은 클린 코드를 짜기 위한 방법들이다.__
 - [의미 있게 이름 정하기](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%9D%98%EB%AF%B8%20%EC%9E%88%EA%B2%8C%20%EC%9D%B4%EB%A6%84%20%EC%A0%95%ED%95%98%EA%B8%B0)
 - [함수 관련](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%95%A8%EC%88%98)
 - [주석](https://github.com/mallycrip/_Clean_Code/blob/master/%EC%A3%BC%EC%84%9D)
+- [형식 맞추기](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%98%95%EC%8B%9D)
