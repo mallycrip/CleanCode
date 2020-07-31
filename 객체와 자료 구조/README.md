@@ -54,4 +54,25 @@ class Square:
 output_dir: str = ctxt.get_options().get_scratch_dir().get_absolute_path()
 ```
 위와 같은 코드는 객체가 마치 한 줄로 이어진 기차 처럼 보이게 한다. 즉 조잡하게 여겨진다.<br/>
-이러한 코드를 `기차 충돌`(train wreck)이라 부르며 피해야 할 코드이다.
+이러한 코드를 `기차 충돌`(train wreck)이라 부르며 피해야 할 코드이다.<br/>
+<br/>
+이러한 코드는 ctxt안에 get_options()이 있음을 나타내고 get_options()안에 get_scratch_dir()이 있음을, 또 get absolute_path()가 있다는 것을 전부 공개하였다.<br/>
+즉 `함수` 하나가 아는 지식이 너무 많다.
+<br/>
+위 코드를 다음과 같이 나누는 편이 좋다.
+```python
+opt = ctxt.get_options()
+scratch_dir = opt.get_scratch_dir()
+output_dir = scratch_dir.get_absolute_path()
+```
+
+위 방법이 사실 디미터 법칙을 위반할 지는 객체이냐, 자료 구조이냐에 따라 달라진다.
+```python
+output_dir = ctxt.options.scratch_dir.absolute_path
+```
+위와 같은 코드는 애초에 자료 구조 이므로 디미터 법칙을 거론할 필요가 없다.
+
+## 잡종 구조
+객체와 자료구조의 짬뽕. 이도 저도 아니고 그냥 양쪽에서 단점만 모아논 구조임. 쓰지 말자.
+
+## 구조체 감추기
