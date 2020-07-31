@@ -48,3 +48,10 @@ class Square:
 - f가 생성한 객체
 - f 인수로 넘어온 객체
 - C 인스턴스 변수에 저장된 객체
+
+### 기차 충돌
+```python
+output_dir: str = ctxt.get_options().get_scratch_dir().get_absolute_path()
+```
+위와 같은 코드는 객체가 마치 한 줄로 이어진 기차 처럼 보이게 한다. 즉 조잡하게 여겨진다.<br/>
+이러한 코드를 `기차 충돌`(train wreck)이라 부르며 피해야 할 코드이다.
