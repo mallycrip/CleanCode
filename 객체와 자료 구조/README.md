@@ -38,4 +38,5 @@ class Square:
 절대 `인터페이스`나 `getter`, `setter`만으로는 `추상화`가 이루어 지지는 않는다.<br/>
 특히 아무 생각 없이 `getter`, `setter`을 추가하는 방법이 가장 나쁘다.
 <br/>
+<br/>
 Page 118 ~ 119
