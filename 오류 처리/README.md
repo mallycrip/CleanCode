@@ -20,3 +20,62 @@
 
 ## 호출자를 고려
 `오류`를 정의할 때에는 `프로그래머의` 가장 중요한 `관심사`는 `오류를 잡아내는 방법`이어야 한다.<br/>
+`Wrapper`을 잘 사용하자. 코드가 깔끔해진다. 다음은 지저분한 `예외`와 `Wrapper`을 사용한 예외이다.
+```python
+port = ACMEPort()
+
+try:
+    port.open()
+
+except DeviceResponseException as e:
+    report_port_error(e)
+    logger.log("Device Response Exception", e)
+
+except ATM1212UnlockedException as e:
+    report_port_error(e)
+    logger.log("Unlocked Exception", e)
+
+except GMXError as e:
+    report_port_error(e)
+    logger.log("GMX Error", e)
+
+finally:
+    ...
+```
+위 코드는 중복이 너무 심하다. 이 코드를 Wrapper로 감싸서 고쳐보겠다.
+```python
+port = LocalPort()
+
+
+try:
+    port.open()
+except PortDeviceFailure as e:
+    report_error(e)
+    logger.log(e)
+finally:
+    pass
+
+
+
+class LocalPort:
+    def __init__(self):
+        self.inner_port = ACMEPort()
+
+    def open(self):
+        try:
+            self.inner_port.open()
+        except DeviceResponseException as e:
+            raise PortDeviceFailre(e)
+        except ATM1212UnlockedException as e:
+            raise PortDeviceFailre(e)
+        except GMXError as e:
+            raise PortDeviceFailre(e)
+```
+
+위와 같이 `LocalPort`클래스처럼 `ACMEPort`를 감싸는 `클래스`는 매우 유용하다. 실제로 외부 `API`를 사용할 때는 `Wrapper`이 가장 좋은 방법이다.<br/>
+외부 `API`를 `Wrapper`로 감싸면 `의존성`가 크게 줄어든다. 나중에 다른 `라이브러리`로 갈아타도 `비용`이 적다.
+
+## 정상 흐름을 정의
+`예외`가 `논리`를 따라가기 어렵게 만들지 말자. `특수 상황`을 `예외`로 처리하려 하지마라.<br/>
+### 특수 사례 패턴
+`클래스`를 만들거나 `객체`를 조작해 `특수 사례`를 처리하자. 굳이 `클라이언트`코드에서 `예외`적인 상황을 처리할 필요가 없도록 한다.
