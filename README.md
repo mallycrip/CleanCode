@@ -42,3 +42,4 @@ __다음은 `클린 코드`를 짜기 위한 방법들이다.__
 - [객체와 자료구조](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B0%9D%EC%B2%B4%EC%99%80%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0)
 - [오류 처리](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%98%A4%EB%A5%98%20%EC%B2%98%EB%A6%AC)
 - [경계](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B2%BD%EA%B3%84)
+- [클래스](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%81%B4%EB%9E%98%EC%8A%A4)
