@@ -1,11 +1,25 @@
 ## ✋ 들어가기 앞서
  본 글은 로버트 C. 마틴 저의 `Clean Code`라는 책을 바탕으로 작성하고 있습니다.<br/>
 책을 읽고 이해한 내용을 바탕으로 작성하고 있어 책과 다른부분이 존재하거나 잘못된 이해한 부분이 있을 수도 있습니다. <br/>
-또한 예시 코드를 `Python`으로 옮기면서 그릇되게 작성 된 부분이 있을 수 있습니다.<br/>
-잘못된 부분, 오탈자 등 수정할 부분에 대해서 `PR`, `ISSUE`를 올려주세요! 🙏<br/>
+또한 예제 코드를 `Python`으로 옮기면서 그릇되게 작성 된 부분이 있을 수 있습니다.<br/>
+잘못된 부분 및 오탈자 등 수정할 부분에 대해서 `PR`, `ISSUE`를 올려주세요! 🙏<br/>
 
 # CleanCode
-__소프트웨어는 80% 이상이 소위 `유지보수`이다.__
+__다음은 클린한 코드를 짜기 위한 방법들이다.__
+- [의미 있게 이름 정하기](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%9D%98%EB%AF%B8%20%EC%9E%88%EA%B2%8C%20%EC%9D%B4%EB%A6%84%20%EC%A0%95%ED%95%98%EA%B8%B0)
+- [함수 관련](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%95%A8%EC%88%98)
+- [주석](https://github.com/mallycrip/_Clean_Code/blob/master/%EC%A3%BC%EC%84%9D)
+- [형식 맞추기](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%98%95%EC%8B%9D)
+- [단위 테스트](https://github.com/mallycrip/_Clean_Code/tree/master/%EB%8B%A8%EC%9C%84%20%ED%85%8C%EC%8A%A4%ED%8A%B8)
+- [객체와 자료구조](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B0%9D%EC%B2%B4%EC%99%80%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0)
+- [오류 처리](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%98%A4%EB%A5%98%20%EC%B2%98%EB%A6%AC)
+- [경계](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B2%BD%EA%B3%84)
+- [클래스](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%81%B4%EB%9E%98%EC%8A%A4)
+<br/>
+<br/>
+
+
+__소프트웨어는 80% 이상이 소위 유지보수이다.__
 ### 유지보수에 초점을 맞춘 TPM의 5S원칙
 - Sort (Seiri) : 적절한 명명법을 통하여 __무엇이 어디에 있는지 알아야함.__
 - Set in order (Seiton) : 코드는 누구나 예상하는 위치에 있어야 함.
@@ -34,14 +48,3 @@ __개발 속도를 빠르게, 기한을 맞추는 유일한 방법은 언제나 
 - 다른 사람이 고치기 쉬운 코드
 - `테스트 케이스`가 존재하고 모든 `테스트`를 통과한 코드
 - 중복이 없고 클래스, 메서드, 함수 등을 최대한 줄인 코드
-
-__다음은 클린한 코드를 짜기 위한 방법들이다.__
-- [의미 있게 이름 정하기](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%9D%98%EB%AF%B8%20%EC%9E%88%EA%B2%8C%20%EC%9D%B4%EB%A6%84%20%EC%A0%95%ED%95%98%EA%B8%B0)
-- [함수 관련](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%95%A8%EC%88%98)
-- [주석](https://github.com/mallycrip/_Clean_Code/blob/master/%EC%A3%BC%EC%84%9D)
-- [형식 맞추기](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%98%95%EC%8B%9D)
-- [단위 테스트](https://github.com/mallycrip/_Clean_Code/tree/master/%EB%8B%A8%EC%9C%84%20%ED%85%8C%EC%8A%A4%ED%8A%B8)
-- [객체와 자료구조](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B0%9D%EC%B2%B4%EC%99%80%20%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0)
-- [오류 처리](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%98%A4%EB%A5%98%20%EC%B2%98%EB%A6%AC)
-- [경계](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B2%BD%EA%B3%84)
-- [클래스](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%81%B4%EB%9E%98%EC%8A%A4)
