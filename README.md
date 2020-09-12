@@ -5,7 +5,7 @@
 잘못된 부분 및 오탈자 등 수정할 부분에 대해서 `PR`, `ISSUE`를 올려주세요! 🙏<br/>
 
 # CleanCode
-__다음은 클린한 코드를 짜기 위한 방법들이다.__
+__다음은 클린 코드를 짜기 위한 방법들이다.__
 - [의미 있게 이름 정하기](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%9D%98%EB%AF%B8%20%EC%9E%88%EA%B2%8C%20%EC%9D%B4%EB%A6%84%20%EC%A0%95%ED%95%98%EA%B8%B0)
 - [함수 관련](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%95%A8%EC%88%98)
 - [주석](https://github.com/mallycrip/_Clean_Code/blob/master/%EC%A3%BC%EC%84%9D)
@@ -15,11 +15,8 @@ __다음은 클린한 코드를 짜기 위한 방법들이다.__
 - [오류 처리](https://github.com/mallycrip/_Clean_Code/tree/master/%EC%98%A4%EB%A5%98%20%EC%B2%98%EB%A6%AC)
 - [경계](https://github.com/mallycrip/_Clean_Code/tree/master/%EA%B2%BD%EA%B3%84)
 - [클래스](https://github.com/mallycrip/_Clean_Code/tree/master/%ED%81%B4%EB%9E%98%EC%8A%A4)
-<br/>
-<br/>
+## 소프트웨어는 80% 이상이 소위 유지보수이다.
 
-
-__소프트웨어는 80% 이상이 소위 유지보수이다.__
 ### 유지보수에 초점을 맞춘 TPM의 5S원칙
 - Sort (Seiri) : 적절한 명명법을 통하여 __무엇이 어디에 있는지 알아야함.__
 - Set in order (Seiton) : 코드는 누구나 예상하는 위치에 있어야 함.
