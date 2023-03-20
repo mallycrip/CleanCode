@@ -26,7 +26,7 @@
 
 **Bad code significantly slows down development speed.** As bad code accumulates, team productivity decreases. When productivity decreases, management will try to recover it by hiring new resources. However, new resources often lack knowledge of system design and are pressured to increase productivity, leading to the production of even worse code. **Producing bad code is not an issue with management.** The problem is following the words of a manager who does not understand the risks of bad code. **The only way to develop quickly and meet deadlines is to make a habit of keeping the code clean.** If you don't read the surrounding code, you can't write new code. If the surrounding code is easy to read, the new code is also easy to write. If you're in a hurry, want to write easily, or want to finish quickly, make it easy to read.
 
-## Programmers' definition of clean code
+## Definition of clean code
 
 - Code that minimizes `dependencies` and expresses them clearly
 - Code that maintains optimal `performance` (not just speed, but also resource utilization, etc.)
